@@ -70,16 +70,12 @@ elif menu == "Dashboards":
     st.title("📈 Dashboards")
 
     st.markdown("#### Amazon Prime Video Data Analysis (Power BI)")
-    uploaded_file = st.file_uploader("my2nddash", type=["pbix"])
-    if uploaded_file is not None:
-        st.write("File uploaded successfully!")
-        st.write(f"File name: {uploaded_file.name}")
+        with open("my2nddash.pbix", "rb") as f:
+        st.download_button("📄 DownloadDashboard", f, "my2nddash.pbix")
    
     st.markdown("#### Data Professional Survey Breakdown (Power BI)")
-    uploaded_file = st.file_uploader("my3rddash", type=["pbix"])
-    if uploaded_file is not None:
-        st.write("File uploaded successfully!")
-        st.write(f"File name: {uploaded_file.name}")
+        with open("my3rddash.pbix", "rb") as f:
+        st.download_button("📄 DownloadDashboard", f, "my3rddash.pbix")
 # About Me Page
 elif menu == "About Me":
     st.title("🙋 About Me")
@@ -114,7 +110,8 @@ elif menu == "Contact":
     st.write("🔗 [LinkedIn](https://www.linkedin.com/in/keshav-sardaofficial/)")
     st.write("💻 [GitHub](https://github.com/dakeshav2028)")
     st.write("📊 [Kaggle](https://www.kaggle.com/keshavsarda123)")
-    with open("Keshav Sarda resume.pdf", "rb") as f:
-        st.download_button("📄 Download Resume", f, "Keshav Sarda resume.pdf")
+    with open("KESHAV SARDA resume.pdf", "rb") as f:
+        st.download_button("📄 Download Resume", f, "KESHAV SARDA resume.pdf")
+
 
 
