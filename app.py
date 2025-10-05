@@ -64,7 +64,7 @@ elif menu == "Projects":
     st.write("Predicted Graduate School Admissions using various ML models.")
     st.markdown("[🔗 GitHub Repo](https://github.com/dakeshav2028/Predicting-Graduate-School-Admissions.git)")
     st.markdown("[🔗 LinkedIn Post](https://www.linkedin.com/posts/keshav-sardaofficial_kaggle-machinelearning-datascience-activity-7352415913716965376-QGPD)")
-
+    
 # Dashboards Page
 elif menu == "Dashboards":
     st.title("📈 Dashboards")
@@ -72,11 +72,17 @@ elif menu == "Dashboards":
     st.markdown("#### Amazon Prime Video Data Analysis (Power BI)")
     with open("my2nddash.pbix", "rb") as f:
       st.download_button("📄 Download Dashboard", f, "my2nddash.pbix")
-
+      st.markdown("[🔗 GitHub Repo](https://github.com/dakeshav2028/Amazon-Prime-Video-Data-Analysis.git)")
+      st.markdown("[🔗 LinkedIn Post](https://www.linkedin.com/posts/keshav-sardaofficial_powerbiabrdashboardabrproject-amazonabrprimeabrvideoabrcontent-activity-7378977046611263488--sa7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAER9uc4B7yd9IoNsokiJHNOWQx2ibt3TM7E)")
+      st.image("apvdadash.png", caption="Amazon Prime Video Dashboard", use_container_width=True)
+        
     st.markdown("#### Data Professional Survey Breakdown (Power BI)")
     with open("my3rddash.pbix", "rb") as f:
       st.download_button("📄 Download Dashboard", f, "my3rddash.pbix")
-
+      st.markdown("[🔗 GitHub Repo](https://github.com/dakeshav2028/Data_Professional_Survey.git)")
+      st.markdown("[🔗 LinkedIn Post](https://www.linkedin.com/posts/keshav-sardaofficial_turningabrdataabrintoabrinsights-dataabrprofessionalabrsurveyabrbreakdown-activity-7380611908489474048-EODv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAER9uc4B7yd9IoNsokiJHNOWQx2ibt3TM7E)")
+      st.image("dpsdash.png", caption="Data Professional Survey Breakdown Dashboard", use_container_width=True)
+        
 # About Me Page
 elif menu == "About Me":
      st.title("🙋 About Me")
@@ -113,6 +119,7 @@ elif menu == "Contact":
     st.write("📊 [Kaggle](https://www.kaggle.com/keshavsarda123)")
     with open("KESHAV SARDA resume.pdf", "rb") as f:
         st.download_button("📄 Download Resume", f, "KESHAV SARDA resume.pdf")
+
 
 
 
