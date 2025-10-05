@@ -70,11 +70,16 @@ elif menu == "Dashboards":
     st.title("📈 Dashboards")
 
     st.markdown("#### Amazon Prime Video Data Analysis (Power BI)")
-    st.components.v1.iframe("https://app.powerbi.com/view?r=YOUR_EMBED_LINK", width=800, height=600)
-
+    uploaded_file = st.file_uploader("my2nddash", type=["pbix"])
+    if uploaded_file is not None:
+        st.write("File uploaded successfully!")
+        st.write(f"File name: {uploaded_file.name}")
+   
     st.markdown("#### Data Professional Survey Breakdown (Power BI)")
-    st.components.v1.iframe("https://app.powerbi.com/view?r=YOUR_EMBED_LINK", width=800, height=600)
-
+    uploaded_file = st.file_uploader("my3rddash", type=["pbix"])
+    if uploaded_file is not None:
+        st.write("File uploaded successfully!")
+        st.write(f"File name: {uploaded_file.name}")
 # About Me Page
 elif menu == "About Me":
     st.title("🙋 About Me")
@@ -111,4 +116,5 @@ elif menu == "Contact":
     st.write("📊 [Kaggle](https://www.kaggle.com/keshavsarda123)")
     with open("Keshav Sarda resume.pdf", "rb") as f:
         st.download_button("📄 Download Resume", f, "Keshav Sarda resume.pdf")
+
 
