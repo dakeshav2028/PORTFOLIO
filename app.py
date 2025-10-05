@@ -109,5 +109,6 @@ elif menu == "Contact":
     st.write("🔗 [LinkedIn](https://www.linkedin.com/in/keshav-sardaofficial/)")
     st.write("💻 [GitHub](https://github.com/dakeshav2028)")
     st.write("📊 [Kaggle](https://www.kaggle.com/keshavsarda123)")
-    with open("Keshav_Sarda_Resume.pdf", "rb") as f:
-        st.download_button("📄 Download Resume", f, "Keshav_Sarda_Resume.pdf")
+    with open("Keshav Sarda resume.pdf", "rb") as f:
+        st.download_button("📄 Download Resume", f, "Keshav Sarda resume.pdf")
+
