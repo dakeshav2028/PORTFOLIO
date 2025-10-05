@@ -70,21 +70,21 @@ elif menu == "Dashboards":
     st.title("📈 Dashboards")
     
     st.markdown("#### Amazon Prime Video Data Analysis (Power BI)")
-with open("my2nddash.pbix", "rb") as f:
-    st.download_button("📄 Download Dashboard", f, "my2nddash.pbix")
+    with open("my2nddash.pbix", "rb") as f:
+      st.download_button("📄 Download Dashboard", f, "my2nddash.pbix")
 
-st.markdown("#### Data Professional Survey Breakdown (Power BI)")
-with open("my3rddash.pbix", "rb") as f:
-    st.download_button("📄 Download Dashboard", f, "my3rddash.pbix")
+    st.markdown("#### Data Professional Survey Breakdown (Power BI)")
+    with open("my3rddash.pbix", "rb") as f:
+      st.download_button("📄 Download Dashboard", f, "my3rddash.pbix")
 
 # About Me Page
 elif menu == "About Me":
-    st.title("🙋 About Me")
-    st.write("""
+     st.title("🙋 About Me")
+     st.write("""
     - 🎓 B.Tech CSE (AI-ML), 3rd Year @ JECRC University  
     - 🔍 Passionate about Data Analytics, Machine Learning, and Business Insights  
     - 🛠 Skills: Python, SQL, Excel, Pandas, NumPy, Power BI, Plotly  
-    """)
+      """)
 
 # Certifications Page
 elif menu == "Certifications":
@@ -113,6 +113,7 @@ elif menu == "Contact":
     st.write("📊 [Kaggle](https://www.kaggle.com/keshavsarda123)")
     with open("KESHAV SARDA resume.pdf", "rb") as f:
         st.download_button("📄 Download Resume", f, "KESHAV SARDA resume.pdf")
+
 
 
 
