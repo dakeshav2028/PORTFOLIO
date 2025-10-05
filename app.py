@@ -64,8 +64,8 @@ elif page == "Certifications":
 #Internship
 elif page == "Internship":
     st.title("Internship")
-    st.write("💻 [Data Science Intern– CodVeda Technologies]()")
-    st.write("💻 [Data Analyst Intern– Samatrix.io]()")
+    st.write("💻 [Data Science Intern– CodVeda Technologies](Keshav Sarda (2).pdf)")
+    st.write("💻 [Data Analyst Intern– Samatrix.io](1754331037168.pdf)")
     st.write("📊 [Data Science Intern-NullClass)](https://www.nullclass.com/certificates/67a0683c6055f48cf895b518)")
 # Contact Page
 elif page == "Contact":
@@ -75,6 +75,7 @@ elif page == "Contact":
     st.write("💻 [GitHub](https://github.com/dakeshav2028)")
     st.write("📊 [Kaggle](https://www.kaggle.com/keshavsarda123)")
     st.download_button("📄 Download Resume", data=open("resume.pdf", "rb"), file_name="KESHAV SARDA resume.pdf")
+
 
 
 
